@@ -4,78 +4,52 @@
 <head>
   <meta charset="utf-8">
   <title>STUDY-WEB</title>
-  <style>
-  #active {
-    color:red;
-  }
-  .saw{
-    color:gray;
-  }
-  body{
-    margin:0;
-  }
-  a {
-    color:black;
-    text-decoration: none;
-    }
-  h1 {
-    font-size:70px;
-    text-align:center;
-    border-bottom: 2px solid gray;
-    margin:0;
-    padding:10px;
-  }
-
-  ol{
-    border-right: 1px solid gray;
-    width:180px;
-    margin:0;
-    padding:20px;
-  }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html" class="saw">HTML</a></li>
-    <li><a href="2.html" class="saw active" id="active">CSS</a></li>
-    <li><a href="3.html" class="saw active">JavaScript</a></li>
-  </ol>
-  <!--
-  <ol>
-    <li><a href="1.html"><font color="red">HTML</font></a></li>
-    <li><a href="2.html"><font color="red">CSS</font></a></li>
-    <li><a href="3.html"><font color="red">JavaScript</font></a></li>
-  </ol>
-  -->
+  <div id="grid">
+    <ol>
+      <li><a href="1.html" class="saw">HTML</a></li>
+      <li><a href="2.html" class="saw active" id="active">CSS</a></li>
+      <li><a href="3.html" class="saw active">JavaScript</a></li>
+    </ol>
+    <!--
+    <ol>
+      <li><a href="1.html"><font color="red">HTML</font></a></li>
+      <li><a href="2.html"><font color="red">CSS</font></a></li>
+      <li><a href="3.html"><font color="red">JavaScript</font></a></li>
+    </ol>
+    -->
+    <div id="article">
+      <h2 style="font-size:50px">WEB</h2>
 
-  <h2 style="font-size:18px">WEB</h2>
+      <img src="coding.jpg" width="70%">
+      <p>WEB is a computer programming system created
+      by Donald E. Knuth as the first implementation of wh
+      at he called "literate programming": the idea that one could creat
+      e software as works of literature, by embedding source code inside
+      descriptive text, rather than the reverse (as is common practice in mo
+      st programming languages), in an order that is convenient for exposition t
+      o human readers, rather than in the order demanded by the compiler.
+      WEB consists of two secondary progra
+      ms: TANGLE, which produces compilable Pascal code fro
+      m the source texts, and WEAVE, which produces nicely-formatted, pr
+      intable documentation using TeX.
+      CWEB is a version of WEB for the C programming language, while
+      noweb is a separate literate programming tool, which is inspired by W
+      EB (as reflected in the name) and which is language agnostic.
+      The most significant programs written in WEB are TeX and Metafont. Mod
+      ern TeX distributions use another program Web2C to convert WEB source to C.
+      </p>
+    </div>
 
-    <img src="coding.jpg" width="70%">
-    <p>WEB is a computer programming system created
-    by Donald E. Knuth as the first implementation of wh
-    at he called "literate programming": the idea that one could creat
-    e software as works of literature, by embedding source code inside
-    descriptive text, rather than the reverse (as is common practice in mo
-    st programming languages), in an order that is convenient for exposition t
-    o human readers, rather than in the order demanded by the compiler.
-    WEB consists of two secondary progra
-    ms: TANGLE, which produces compilable Pascal code fro
-    m the source texts, and WEAVE, which produces nicely-formatted, pr
-    intable documentation using TeX.
-    CWEB is a version of WEB for the C programming language, while
-    noweb is a separate literate programming tool, which is inspired by W
-    EB (as reflected in the name) and which is language agnostic.
-    The most significant programs written in WEB are TeX and Metafont. Mod
-    ern TeX distributions use another program Web2C to convert WEB source to C.
-    </p>
-
-    <div id="disqus_thread"></div>
+  <div id="disqus_thread"></div>
 
     <p>
-
+  </div>
       <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
